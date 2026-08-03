@@ -1,6 +1,6 @@
 # Transformers & Attention Mechanisms
 
-Day 13 of my AI learning journey focused on the architecture behind modern large language models: the **Transformer**. I studied why Transformers replaced recurrent approaches for many sequence tasks, implemented the core architecture from scratch with PyTorch, and used pretrained models through Hugging Face.
+Today, I focused on the architecture behind modern large language models: the **Transformer**. I studied why Transformers replaced recurrent approaches for many sequence tasks, implemented the core architecture from scratch with PyTorch, and used pretrained models through Hugging Face.
 
 ![Day 13 - Transformers and Attention Mechanisms](./Day-13.png)
 
