@@ -26,6 +26,14 @@ This makes Transformers highly parallelizable and effective at modeling long-ran
 Attention determines how strongly one token should focus on every other token.
 
 $$
+\text{Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
+$$
+
+$$
+\mathrm{Attention}(Q,K,V) = \mathrm{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
+$$
+
+$$
 \operatorname{Attention}(Q,K,V) = \operatorname{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
 $$
 
