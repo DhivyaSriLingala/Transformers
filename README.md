@@ -155,23 +155,11 @@ The new three-class classification layer is randomly initialized and must be tra
 <summary><strong>Answer key</strong></summary>
 
 
-**Answer:** In self-attention, Q, K, and V come from the same sequence, so its tokens attend to one another. In cross-attention, the queries come from one sequence-usually the decoder-while the keys and values come from another sequence, such as the encoder output.
-
-### 2. 
-
-**Answer:** Dot products tend to grow as the key dimension increases. Dividing by $\sqrt{d_k}$ keeps their scale controlled, prevents softmax from becoming extremely peaked, and supports healthier gradients during training.
-
-### 3. 
-
-**Answer:** Self-attention considers relationships between tokens but has no built-in understanding of their order. Positional encoding adds sequence-position information to the embeddings, allowing the model to distinguish different word orders.
-
-### 4. 
-
-**Answer:** Multiple heads learn different projections and can focus on different relationships simultaneously, such as syntax, meaning, and coreference. Combining them gives the model a richer representation than one head alone.
-
-### 5. 
-
-**Answer:** BERT is the more natural starting point because it is an encoder trained to build bidirectional representations for language-understanding tasks. A three-class classification head can be added and fine-tuned on labeled headlines. A GPT-style model can also classify text, but its causal generation objective is less directly aligned with this task.
+1. In self-attention, Q, K, and V come from the same sequence, so its tokens attend to one another. In cross-attention, the queries come from one sequence-usually the decoder-while the keys and values come from another sequence, such as the encoder output.
+2. Dot products tend to grow as the key dimension increases. Dividing by $\sqrt{d_k}$ keeps their scale controlled, prevents softmax from becoming extremely peaked, and supports healthier gradients during training.
+3. Self-attention considers relationships between tokens but has no built-in understanding of their order. Positional encoding adds sequence-position information to the embeddings, allowing the model to distinguish different word orders.
+4. Multiple heads learn different projections and can focus on different relationships simultaneously, such as syntax, meaning, and coreference. Combining them gives the model a richer representation than one head alone.
+5. BERT is the more natural starting point because it is an encoder trained to build bidirectional representations for language-understanding tasks. A three-class classification head can be added and fine-tuned on labeled headlines. A GPT-style model can also classify text, but its causal generation objective is less directly aligned with this task.
 
 ## Repository files
 
