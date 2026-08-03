@@ -29,13 +29,6 @@ $$
 \text{Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
 $$
 
-$$
-\mathrm{Attention}(Q,K,V) = \mathrm{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
-$$
-
-$$
-\operatorname{Attention}(Q,K,V) = \operatorname{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
-$$
 
 - **Query (Q):** what the current token is looking for.
 - **Key (K):** what each token can be matched against.
