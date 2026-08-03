@@ -151,6 +151,10 @@ The new three-class classification layer is randomly initialized and must be tra
 4. What advantage does multi-head attention have over a single attention head?
 5. For positive/negative/neutral headline classification, would BERT or a GPT-style model be the more natural starting point, and why?
 
+<details>
+<summary><strong>Answer key</strong></summary>
+
+
 **Answer:** In self-attention, Q, K, and V come from the same sequence, so its tokens attend to one another. In cross-attention, the queries come from one sequence-usually the decoder-while the keys and values come from another sequence, such as the encoder output.
 
 ### 2. 
