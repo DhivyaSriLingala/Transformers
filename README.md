@@ -1,8 +1,8 @@
-# Day 13 — Transformers & Attention Mechanisms
+# Day 13 - Transformers & Attention Mechanisms
 
 Day 13 of my AI learning journey focused on the architecture behind modern large language models: the **Transformer**. I studied why Transformers replaced recurrent approaches for many sequence tasks, implemented the core architecture from scratch with PyTorch, and used pretrained models through Hugging Face.
 
-![Day 13 — Transformers and Attention Mechanisms](./Day-13.png)
+![Day 13 - Transformers and Attention Mechanisms](./Day-13.png)
 
 ## Learning objectives
 
@@ -92,7 +92,7 @@ The feed-forward network expands each token representation from `d_model` to `d_
 
 All implementation work is in [`Transformers_Attenstion_Mechanisms.ipynb`](./Transformers_Attenstion_Mechanisms.ipynb).
 
-### Part A — Transformer components from scratch
+### Part A - Transformer components from scratch
 
 Using PyTorch, I implemented:
 
@@ -113,7 +113,7 @@ Output shape: torch.Size([4, 3])
 
 The test used a batch of four sequences, each containing 64 token IDs. The `(4, 3)` output confirms that the model returns three class scores for every sample.
 
-### Part B — Pretrained Transformers with Hugging Face
+### Part B - Pretrained Transformers with Hugging Face
 
 I also explored a production-oriented workflow:
 
@@ -148,7 +148,7 @@ The new three-class classification layer is randomly initialized and must be tra
 
 ### 1. What is the difference between self-attention and cross-attention?
 
-**Answer:** In self-attention, Q, K, and V come from the same sequence, so its tokens attend to one another. In cross-attention, the queries come from one sequence—usually the decoder—while the keys and values come from another sequence, such as the encoder output.
+**Answer:** In self-attention, Q, K, and V come from the same sequence, so its tokens attend to one another. In cross-attention, the queries come from one sequence-usually the decoder-while the keys and values come from another sequence, such as the encoder output.
 
 ### 2. Why is the attention score divided by $\sqrt{d_k}$?
 
