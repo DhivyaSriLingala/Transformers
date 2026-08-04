@@ -164,14 +164,6 @@ The new three-class classification layer is randomly initialized and must be tra
 
 </details>
 
-## Repository files
-
-```text
-Day-13/
-├── README.md
-├── Transformers_Attenstion_Mechanisms.ipynb
-└── Day-13.png
-```
 
 ## Next step
 
