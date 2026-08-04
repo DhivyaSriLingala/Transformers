@@ -162,6 +162,8 @@ The new three-class classification layer is randomly initialized and must be tra
 4. Multiple heads learn different projections and can focus on different relationships simultaneously, such as syntax, meaning, and coreference. Combining them gives the model a richer representation than one head alone.
 5. BERT is the more natural starting point because it is an encoder trained to build bidirectional representations for language-understanding tasks. A three-class classification head can be added and fine-tuned on labeled headlines. A GPT-style model can also classify text, but its causal generation objective is less directly aligned with this task.
 
+</details>
+
 ## Repository files
 
 ```text
