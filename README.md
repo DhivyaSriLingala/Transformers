@@ -167,4 +167,4 @@ The new three-class classification layer is randomly initialized and must be tra
 
 ## Next step
 
-Continue to Day 14: large language models, prompt engineering, few-shot learning, and practical LLM application patterns.
+Next focus will be on large language models, prompt engineering, few-shot learning, and practical LLM application patterns.
